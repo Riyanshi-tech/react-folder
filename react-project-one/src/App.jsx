@@ -1,11 +1,13 @@
 
-
+import UserCard from "./components/UserCard"
 
 function App() {
   
   return (
     <>
-      <p>My name is Riyanshi.
+      <p> 
+        <UserCard/> 
+        
 
       </p>
     </>
