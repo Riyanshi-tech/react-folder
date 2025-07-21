@@ -6,8 +6,9 @@
 
 }
 body{
-  height:100vh;
-  display:flex;
+  height: 100vh;
+  display: flex;
+  
   justify-content: center;
   align-items: center;
   background-color: beige;

@@ -1,4 +1,9 @@
-p{
-  font-size: 50%;
-  width: 100%;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px;
+  background-color: beige;
+  /* optional */
 }

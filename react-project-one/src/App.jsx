@@ -5,11 +5,12 @@ function App() {
   
   return (
     <>
-      <p> 
+      <div className="container"> 
         <UserCard/> 
+        <UserCard/>
+        <UserCard/>
         
-
-      </p>
+      </div>
     </>
   )
 }
