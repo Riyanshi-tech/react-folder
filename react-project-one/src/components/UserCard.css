@@ -1,25 +1,29 @@
 .user-container {
     background-color: rgb(246, 172, 75);
-    padding: 5px;
+    padding: 0px;
     color: black;
     display: flex;
     flex-direction: column;
     /* stack name, image, description vertically */
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    
-    width: 250px;
+    gap: 40px;
+
+    width: 200px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     /* spacing between child elements */
 }
 
 #user-image {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    border-radius: 60%;
     object-fit: cover;
     border: 3px solid white;
     /* optional: for styling */
+}
+#user-description{
+    padding: 7px;
+    
 }

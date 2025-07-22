@@ -1,13 +1,14 @@
 import React from 'react';
-import fairyimg from "../assets/fairy-7876740_1280.jpg";
-import "./UserCard.css"; // ✅ correct CSS import
+import "./UserCard.css";
 
-const UserCard = () => {
+
+
+const UserCard = (props) => {
   return (
     <div className='user-container'>
-        <p id='user-name'>Riyanshi</p>
-        <img id='user-image' src={fairyimg} alt="Riyanshi" />
-        <p id='user-description'>description of Riyanshi</p>
+        <p id='user-name'>{props.name}</p>
+        <img id='user-image' src={props.img} alt={props.name} />
+        <p id='user-description'>{props.desc}</p>
     </div>
   );
 };
