@@ -1,0 +1,9 @@
+.counter-container{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1.5rem;
+    border-radius: black;
+    border-radius:40px black;
+}
