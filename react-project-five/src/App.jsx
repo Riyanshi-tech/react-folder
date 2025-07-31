@@ -7,18 +7,18 @@ function App() {
   
 const[ isLoggedIn , setLoggedIn ]=useState(true);  
       
-  //  if(isLoggedIn){
-  //   return(
-  //     <LogoutBtn/>
-  //   )
-  //  }else{
-  //   return(
-  //     <LoginBtn/>
-  //   )
-  //  }
+   if(isLoggedIn){
+    return(
+      <LogoutBtn/>
+    )
+   }else{
+    return(
+      <LoginBtn/>
+    )
+   }
         
       
-  // )
+  
 }
 
 export default App
