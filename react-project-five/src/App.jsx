@@ -5,17 +5,21 @@ import LogoutBtn from './components/LogoutBtn';
 import LoginBtn from './components/LoginBtn';
 function App() {
   
-const[ isLoggedIn , isLoggedOut ]=useState(true);  
-      
-   if(isLoggedIn){
-    return(
-      <LogoutBtn/>
-    )
-   }else{
-    return(
-      <LoginBtn/>
-    )
-   }
+const[ isLoggedIn , setLoggedIn]=useState(true);  
+      return(
+        <div> 
+          {isLoggedIn ? <LogoutBtn/> :<LoginBtn/>}
+        </div>
+      )
+  //  if(isLoggedIn){
+  //   return(
+  //     <LogoutBtn/>
+  //   )
+  //  }else{
+  //   return(
+  //     <LoginBtn/>
+  //   )
+  //  }
         
       
   
