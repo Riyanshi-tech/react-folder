@@ -16,6 +16,7 @@ function App() {
     <div>
       <form >
         <input type="text" onchange={handleinputchange} />
+        <button type='submit'>Submit</button>
       </form>
       {/* <p onMouseOver={handlemouseover} style={{border:"1px solid black"}}>I am Paragraph</p>
     <button onClick={handleclick}>click me</button> */}
