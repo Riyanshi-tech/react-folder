@@ -8,16 +8,17 @@ function App() {
   // function handlemouseover(){
   //   alert("you are on the para")
   // }
-  function handleinputchange(e){
-    // console.log("input value get changed")
-    console.log("value till now:", e.target.value);
-  }
+  // function handleinputchange(e){
+  //   // console.log("input value get changed")
+  //   console.log("value till now:", e.target.value);
+  // }
   return (
     <div>
-      <form >
+      <button onClick={()=>alert("immediate invoke")}>click me</button>
+      {/* <form >
         <input type="text" onchange={handleinputchange} />
-        <button type='submit'>Submit here</button>
-      </form>
+        <button type='submit'>Submit </button>
+      </form> */}
       {/* <p onMouseOver={handlemouseover} style={{border:"1px solid black"}}>I am Paragraph</p>
     <button onClick={handleclick}>click me</button> */}
     </div>
