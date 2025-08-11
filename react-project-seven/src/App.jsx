@@ -1,13 +1,13 @@
 
 import './App.css'
-import {useEffect,useState} from 'react'
+// import {useEffect,useState} from 'react'
 function App() {
-  const [count,setCount] = useState(0);
-  const [total,setTotal] = useState(1);
- useEffect(() => {
-   alert("I will render on each click")
+//   const [count,setCount] = useState(0);
+//   const [total,setTotal] = useState(1);
+//  useEffect(() => {
+//    alert("I will render on each click")
    
- })
+//  })
 //  variation 2
 //   useEffect(() => {
    
@@ -36,22 +36,23 @@ function App() {
 // }, [count])
 
  
- function handleClick(){
-  setCount(count+1);
-  setTotal(total+1);
- }
+//  function handleClick(){
+//   setCount(count+1);
+//   setTotal(total+1);
+//  }
  
 
   return (
     <div>
-      <button onClick={handleClick}>click me</button>
+      {/* <button onClick={handleClick}>click me</button>
       <br />
       count is:{count}
       <br />
       <button onClick={handleClick}>click me</button>
       <br />
       total is:{total}
-    </div>
+    </div> */}
+     </div>
   )
 }
 
