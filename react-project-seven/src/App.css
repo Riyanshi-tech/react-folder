@@ -2,5 +2,6 @@
     margin: 0;
     background-origin: padding-box;
     border-radius: 0;
+    display: inline;
 }
 
