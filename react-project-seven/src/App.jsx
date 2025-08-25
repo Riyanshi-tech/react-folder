@@ -44,14 +44,7 @@ function App() {
 
   return (
     <div>
-      {/* <button onClick={handleClick}>click me</button>
-      <br />
-      count is:{count}
-      <br />
-      <button onClick={handleClick}>click me</button>
-      <br />
-      total is:{total}
-    </div> */}
+      
      </div>
   )
 }
