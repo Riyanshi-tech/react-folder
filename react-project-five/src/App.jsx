@@ -1,16 +1,18 @@
 
-import './App.css'
-import { useState } from 'react';
-import LogoutBtn from './components/LogoutBtn';
-import LoginBtn from './components/LoginBtn';
+import './index.css'
+// import {  } from 'react';
+// import LogoutBtn from './components/LogoutBtn';
+// import LoginBtn from './components/LoginBtn';
 function App() {
-  
-const[ isLoggedIn , setLoggedIn]=useState(true);  
-      return(
-        <div> 
-          {isLoggedIn ? <LogoutBtn/> :<LoginBtn/>}
-        </div>
-      )
+  <div>
+    <h1 className='bg-green'>Plugin tailwind css</h1>
+  </div>
+// const[ isLoggedIn ]=useState(true);  
+//       return(
+//         <div> 
+//           {isLoggedIn ? <LogoutBtn/> :<LoginBtn/>}
+//         </div>
+//       )
   //  if(isLoggedIn){
   //   return(
   //     <LogoutBtn/>
