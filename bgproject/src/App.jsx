@@ -1,31 +1,38 @@
 import { useState } from "react";
 
 function App() {
-  // Predefine all the Tailwind classes we want
-  const colors = {
-    red: "bg-red-500",
-    green: "bg-green-500",
-    blue: "bg-blue-500",
-    yellow: "bg-yellow-400",
-    purple: "bg-purple-500",
-  };
+  const [color, setColor] = useState("olive");
 
-  // Initial background color
-  const [color, setColor] = useState(colors.red);
+  console.log("Current color:", color);
 
   return (
-    <div className={`w-full h-screen transition-colors duration-500 ${color}`}>
+    <div
+      style={{ backgroundColor: color, height: "100vh", width: "100vw" }}
+      className="transition-colors duration-500"
+    >
       <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2">
         <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-3xl">
-          {Object.entries(colors).map(([name, className]) => (
-            <button
-              key={name}
-              onClick={() => setColor(className)}
-              className={`${className} outline-none px-4 py-1 rounded-full text-white shadow-lg capitalize`}
-            >
-              {name}
-            </button>
-          ))}
+          <button
+            onClick={() => setColor("red")}
+            className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+            style={{ backgroundColor: "red" }}
+          >
+            Red
+          </button>
+          <button
+            onClick={() => setColor("green")}
+            className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+            style={{ backgroundColor: "green" }}
+          >
+            Green
+          </button>
+          <button
+            onClick={() => setColor("blue")}
+            className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+            style={{ backgroundColor: "blue" }}
+          >
+            Blue
+          </button>
         </div>
       </div>
     </div>
