@@ -1,11 +1,15 @@
 
 import React from 'react'
-import Header from './components/Header'
-import { Gi3dGlasses } from "react-icons/gi";
+
+import Name from './components/Name'
+
 const App = () => {
   return (
-    
-    <Gi3dGlasses />
+    <div>
+      
+      <Name/>
+    </div>
+  
   )
 }
 
